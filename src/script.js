@@ -1,7 +1,7 @@
 const dino = document.getElementById("dino")
 const cactus = document.getElementById("cactus")
-let jumpcount= 0 
-
+let count = 0
+console.log(count)
 
 
 
@@ -13,20 +13,20 @@ function jump() {
             dino.classList.remove("jump")
         }, 300)
     }
-}  
+}
 
-let isAlive = setInterval(function(){
+let isAlive = setInterval(function () {
     let dinotop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusleft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
 
     //  fonction pour détecter les collisions
-    if(cactusleft <50 && cactusleft > 0 && dinotop >= 140){
-
+    if (cactusleft < 50 && cactusleft > 0 && dinotop >= 140) {
         //console.log("collision")
-         alert("Game over!")
-         console.log(jumpcount)
+        alert("Game over!")
     }
-},10)
+
+}, 10)
+
 
 
 document.addEventListener("keydown", function (event) {
