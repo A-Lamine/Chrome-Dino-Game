@@ -31,12 +31,24 @@
           animation: block 1s infinite linear;
 }
 
+.game .cactus2 {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 70px;
+  left: 200px;
+  background-image: url(../images/cactus.png);
+  background-size: 20px 40px;
+  -webkit-animation: block1 2.5s infinite linear;
+          animation: block1 2.5s infinite linear;
+}
+
 @-webkit-keyframes jump {
   0% {
     top: 150px;
   }
   50% {
-    top: 100px;
+    top: 90px;
   }
   100% {
     top: 150px;
@@ -48,7 +60,7 @@
     top: 150px;
   }
   50% {
-    top: 100px;
+    top: 90px;
   }
   100% {
     top: 150px;
@@ -70,6 +82,30 @@
   }
   100% {
     left: 0px;
+  }
+}
+
+@-webkit-keyframes block1 {
+  0% {
+    left: 200px;
+  }
+  100% {
+    left: 0px;
+  }
+  1% {
+    left: 580px;
+  }
+}
+
+@keyframes block1 {
+  0% {
+    left: 200px;
+  }
+  100% {
+    left: 0px;
+  }
+  1% {
+    left: 580px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -26,13 +26,25 @@
         animation: block 1s infinite linear;
     }
     
+    .cactus2{
+        width: 20px;
+        height: 40px;
+        position: relative;
+        top: 70px;
+        left: 200px;
+        background-image: url(../images/cactus.png);
+        background-size: 20px 40px;
+        animation: block1 2.5s infinite linear;
+        
+    }
+    
 }
 @keyframes jump{
     0%{
         top: 150px
     }
     50%{
-        top: 100px
+        top: 90px
     }
    
     100%{
@@ -46,5 +58,17 @@
     }
     100%{
         left: 0px;
+    }
+}
+
+@keyframes block1{
+    0%{
+        left: 200px;
+    }
+    100%{
+        left: 0px;
+    }
+    1%{
+        left: 580px
     }
 }
