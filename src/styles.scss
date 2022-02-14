@@ -1,3 +1,7 @@
+body{
+    background-image: url(../images/cactus_slate.jpg);
+    background-size: 100%;
+}
 .game{
     width: 600px;
     height: 200px;
@@ -23,28 +27,23 @@
         left: 580px;
         background-image: url(../images/cactus.png);
         background-size: 20px 40px;
-        animation: block 4s infinite linear;
+        animation: block 1s infinite linear;
     }
     
-    .cactus2{
-        width: 20px;
-        height: 40px;
-        position: relative;
-        top: 70px;
-        left: 200px;
-        background-image: url(../images/cactus.png);
-        background-size: 20px 40px;
-        animation: block1 2.5s infinite linear;
-        
-    }
     
 }
 @keyframes jump{
     0%{
         top: 150px
     }
+    30%{
+        top: 130px
+    }
     50%{
         top: 90px
+    }
+    70%{
+        top: 130px
     }
    
     100%{
@@ -56,19 +55,10 @@
     0%{
         left: 580px;
     }
-    100%{
-        left: 0px;
-    }
-}
-
-@keyframes block1{
-    0%{
-        left: 200px;
+    50%{
+        left: 290px;
     }
     100%{
         left: 0px;
-    }
-    1%{
-        left: 580px
     }
 }
